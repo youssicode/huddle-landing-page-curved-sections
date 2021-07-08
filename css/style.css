@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Very-Pale-Cyan: #f6fbff;
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+  --Body-Copy-Font-size: 16px;
+  --Body-Call-to-actions-Font-Family: sans-serif;
+  --Headings-Font-Family: "Poppins", sans-serif;
+  /* ---------------- */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: var(--Body-Call-to-actions-Font-Family);
+  font-size: var(--Body-Copy-Font-size);
+  color: var(--Very-Dark-Cyan);
+}
+main {
+  width: 1440px;
+  margin: 30px auto;
+}
+.header,
+.testimo-top,
+.testimo-cards,
+.banner,
+.footer {
+  width: inherit; /* the same width of the main parent */
+}
+header {
+  margin: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p {
+  line-height: 1.4;
+}
+.logo {
+  width: 210px;
+}
+.btn {
+  padding: 16px 60px;
+  border-radius: 30px;
+  background-color: white;
+  font-size: small;
+  font-weight: 800;
+  color: var(--Pink);
+  border: 0.5px solid var(--Pink);
+}
+.testimo-top {
+  padding: 100px 24px 200px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../images/bg-section-top-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+h1 {
+  /* font-family: var(--Headings-Font-Family); */
+  font-size: 38px;
+}
+h2 {
+  margin: 18px auto;
+  font-size: 33px;
+  font-weight: 800;
+}
+.testimo-top-quote {
+  margin: 25px 0;
+  font-size: 17px;
+  width: 40%;
+  text-align: center;
+}
+.btn-pink {
+  padding: 22px 85px;
+  margin: 25px auto 85px auto;
+  background-color: var(--Pink);
+  color: white;
+  border-radius: 50px;
+  font-size: medium;
+  font-weight: 600;
+  width: max-content;
+  box-shadow: 1px 5px 6px lightgray;
+}
+.btn-pink:hover,
+.btn:hover,
+.btn-subscribe:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.testimo-top-content .btn-pink {
+  padding: 17px 60px;
+  margin-left: 0;
+}
+.testimo-top img {
+  width: 54%;
+}
+.statistics {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+.communities h1,
+.messages h1 {
+  font-size: 70px;
+}
+.statistics img {
+  width: 35px;
+}
+.communities,
+.messages {
+  font-size: 20px;
+}
+.testimo-cards {
+  background-color: var(--Very-Pale-Cyan);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 45px 45px 108px;
+}
+.testimo-cards-content {
+  width: 45%;
+}
+.testimo-cards-quote {
+  font-size: 20px;
+  color: var(--Grayish-Blue);
+}
+.testimo-cards img {
+  width: 400px;
+}
+.testimo-card2 {
+  flex-direction: row-reverse;
+  background-color: white;
+  height: 755px;
+  background-image: url("../images/bg-section-top-desktop-2.svg"),
+    url("../images/bg-section-bottom-desktop-1.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom, top;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* code repeated */
+  background-color: white;
+  /* --------------- */
+  color: var(--Very-Dark-Cyan);
+
+  height: 750px;
+  background-image: url("../images/bg-section-bottom-desktop-2.svg"),
+    url("../images/bg-footer-top-desktop.svg");
+  background-repeat: no-repeat;
+  background-position-y: top, bottom;
+}
+.banner h2 {
+  margin: 78px auto 0 auto;
+}
+.banner .btn-pink {
+  font-weight: 800;
+}
+footer {
+  background-color: var(--Very-Dark-Cyan);
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 110px;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 300px;
+  /* margin: 35px 115px 0 auto; */
+}
+.map > p,
+.newsletter > p {
+  padding-top: 20px;
+}
+.phone,
+.email {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.phone img,
+.email img {
+  width: 20px;
+  margin-right: 20px;
+}
+.map > div {
+  margin-top: 30px;
+}
+.fab {
+  font-size: 2rem;
+  margin-top: 55px;
+}
+i {
+  margin-right: 10px;
+}
+i:hover {
+  color: var(--Pink);
+  cursor: pointer;
+}
+.newsletter {
+  width: 560px;
+  position: relative;
+}
+.newsletter h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: var(--Headings-Font-Family);
+}
+.newsletter > p {
+  width: 360px;
+}
+.input-email {
+  margin: 30px 35px 50px 0;
+  width: 340px;
+  height: 45px;
+  border-radius: 7px;
+}
+.btn-subscribe {
+  padding: 0 45px;
+  background-color: var(--Pink);
+  color: white;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: 800;
+  height: 45px;
+  border: none;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ? Mobile screen */
+@media (max-width: 375px) {
+  main {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  header {
+    margin: 0 22px 100px 22px;
+    overflow: auto;
+  }
+  header .logo {
+    width: 100px;
+  }
+  .btn {
+    padding: 4px 12px;
+    font-size: 10px;
+  }
+  .testimo-top-header {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 800;
+  }
+  .testimo-top-quote {
+    width: 93%;
+    font-size: 13px;
+  }
+  .btn-pink {
+    padding: 11px 35px;
+    margin: 25px auto 100px auto;
+    font-size: 12px;
+  }
+  .testimo-top > img {
+    width: 96%;
+    margin-bottom: 70px;
+  }
+  .messages {
+    margin-bottom: 40px;
+    margin-top: 80px;
+  }
+  .communities h1,
+  .messages h1 {
+    font-size: 55px;
+  }
+  .caption {
+    font-size: 16px;
+    text-align: center;
+  }
+  .communities img,
+  .messages img {
+    width: 25px;
+  }
+
+  /* Bottom section */
+  .testimo-top {
+    padding: 0 24px 35px;
+  }
+  .testimo-top {
+    background-image: url("../images/bg-section-top-mobile-1.svg");
+  }
+  .testimo-cards {
+    padding: 70px 25px 50px;
+    flex-direction: column-reverse;
+  }
+  .testimo-cards img {
+    width: 82%;
+  }
+  .testimo-card2 {
+    height: initial;
+    background-image: url("../images/bg-section-top-mobile-2.svg"),
+      url("../images/bg-section-bottom-mobile-1.svg");
+    padding-bottom: 200px;
+  }
+  .testimo-card2 img {
+    margin: 100px auto 30px;
+  }
+  .testimo-cards-content {
+    width: 98%;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .testimo-cards-content h2 {
+    font-size: 18px;
+  }
+  .testimo-cards-content p {
+    line-height: 1.6;
+  }
+  .testimo-cards-quote {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .testimo-card3 {
+    padding: 0 25px 110px 25px;
+  }
+  .banner {
+    background-image: url("../images/bg-section-bottom-mobile-2.svg"),
+      url("../images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-position-y: top, bottom;
+    text-align: center;
+    height: 600px;
+    padding: 50px auto 100px auto;
+  }
+  .banner h2 {
+    font-size: 22px;
+  }
+  .banner .btn-pink {
+    padding: 13px 44px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  footer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    float: initial;
+    padding: 40px 30px;
+    position: relative;
+    text-align: start;
+    font-size: 14px;
+  }
+  .map {
+    width: initial;
+    padding-bottom: 40px;
+  }
+  .newsletter {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: initial;
+    margin-bottom: 90px;
+  }
+  .newsletter h3 {
+    font-size: 20px;
+  }
+  .newsletter > p {
+    width: 100%;
+  }
+  .input-email {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .btn-subscribe {
+    font-size: 14px;
+    padding: 10px 40px;
+    max-width: 100%;
+    align-self: flex-end;
+  }
+  .map .logo {
+    width: 70%;
+  }
+  .s-media {
+    margin-top: 0 !important;
+  }
+  .attribution {
+    width: 100%;
+    font-size: small;
+    margin-bottom: 10px;
+  }
+}
